@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 class League extends React.Component{
   constructor(props){
@@ -35,7 +36,9 @@ class League extends React.Component{
           <p>Games start as early as {this.props.earlyTime} and as late as {this.props.lateTime}</p>
           <p>End of Season Tournament is on {this.props.tourneyDay}</p>
           <p>{this.props.description}</p>
+          <h4><Link to="/register">Register</Link></h4>
           <button onClick={this.handleClick}>Show less</button>
+
         </div>
       );
 
@@ -52,6 +55,7 @@ class League extends React.Component{
           <h3>{this.props.name}</h3>
           <hr/>
           <p>{this.props.weekday}s starting {this.props.startDate} at {this.props.field}</p>
+          <h4><Link to="/register">Register</Link></h4>
           <button onClick={this.handleClick}>Show More</button>
         </div>
       );

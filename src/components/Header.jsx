@@ -5,7 +5,7 @@ function Header(){
   return (
     <div>
       <h1>League Registration!</h1>
-      <Link to="/">Home</Link> | <Link to="/register">Register</Link>
+      <Link to="/">Home</Link> | <Link to="/myTeams">My Teams</Link>
     </div>
   );
 }
