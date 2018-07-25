@@ -1,14 +1,30 @@
 import React from 'react';
+import TeamDetail from './TeamDetail';
+import PropTypes from 'prop-types';
 
-
-
-function TeamList(){
+function TeamList(props){
 
   return(
     <div>
-      <p>TeamList content</p>
+      <h2>My Teams</h2>
+      {props.teamList.map((team, index) =>
+        <TeamDetail name={team.name}
+          color = {team.color}
+          captain = {team.captain}
+          wins = {team.wins}
+          losses = {team.losses}
+          draws = {team.draws}
+          pointsFor = {team.pointsFor}
+          pointsAgainst = {team.pointsAgainst}
+          members = {team.members}
+          key={index}/>
+      )}
     </div>
   );
 }
+
+TeamList.propTypes = {
+  teamList: PropTypes.array
+};
 
 export default TeamList;
