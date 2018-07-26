@@ -60,7 +60,7 @@ class TeamDetail extends React.Component{
           <h3>{this.props.name}</h3>
           <hr/>
           <p><em>Captain:</em> {this.props.captain}</p>
-          <p><em>Color:</em> {this.props.captain}</p>
+          <p><em>Color:</em> {this.props.color}</p>
           <button onClick={this.handleClick}>Show More</button>
         </div>
       );

@@ -9,8 +9,8 @@ function TeamList(props){
       <h2>My Teams</h2>
       {props.teamList.map((team, index) =>
         <TeamDetail name={team.name}
-          color = {team.color}
           captain = {team.captain}
+          color = {team.color}
           wins = {team.wins}
           losses = {team.losses}
           draws = {team.draws}
